@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoxyAirlines</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #2d2d2d;
+        color: #e5e5e5;
+        font-family: "Inter", sans-serif;
+      }
+      header {
+        background: linear-gradient(90deg, #3f3f3f 0%, #4b4b4b 100%);
+      }
+      nav a:hover {
+        color: #a3a3a3;
+        transition: color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="p-6 shadow-lg">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Система Аеропорту "FoxyAirlines"</h1>
+        <nav>
+          <a href="#" class="text-gray-300 mx-4 hover:text-gray-400">Головна</a>
+          <a href="#" class="text-gray-300 mx-4 hover:text-gray-400">Польоти</a>
+          <a href="#" class="text-gray-300 mx-4 hover:text-gray-400">Підтримка</a>
+        </nav>
+      </div>
+    </header>
+    <main class="flex-grow max-w-6xl mx-auto p-6 text-center">
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">
+          Раді бачити вас у нашому аеропорті
+        </h2>
+        <p class="text-gray-400">
+          Відкрийте для себе безмежні можливості у нашому аеропорті
+        </p>
+      </section>
+    </main>
+    <footer class="relative bg-gray-800 p-4 text-gray-400">
+  <div class="flex items-center">
+    <span class="absolute left-4"> company group team </span>
+    <p class="mx-auto text-center">
+      &copy; 2025 FoxyAirlines Information System. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+    <script>
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          alert("Упс! Ведеться розробка");
+        });
+      });
+    </script>
+  </body>
+</html>
